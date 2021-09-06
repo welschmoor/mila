@@ -18,6 +18,7 @@ Light Version colors
     --bg-color: hsl(335, 65%, 91%);
 
     --text-color: hsl(335, 42%, 96%);
+    --text-dark-color: hsl(335, 42%, 34%);
     --span-color: hsl(335, 42%, 64%);
 
 }
@@ -85,7 +86,7 @@ html {
 .mainnav-a:hover,
 .mainnav-a:active {
     /* border: 3px solid white; */
-    box-shadow: 0 0 0 3px white;
+    box-shadow: 0 0 0 2px white;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -100,6 +101,19 @@ html {
 
 }
 
+.medalafter::before {
+    content: url(img/medaillen.png);
+    display: inline-block;
+    position: absolute;
+    top:  0;
+    left: 0;
+    transform: scale(0.08) translate(280%, -530%);
+    z-index: 1;
+}
+
+.zindex {
+    z-index: 999;
+}
 
 
 /*//////////////////////////////////////////////////
@@ -161,7 +175,14 @@ html {
         Medaillen
 //////////////////////////////////////////////////*/
 .medaillen-maindiv {
+    padding: 3rem 0rem;
+    margin-top: 4.2rem;
 
+}
+.medaillen-title-div {
+    text-align: center;
+    margin-bottom: 3rem;
+    
 }
 
 .medaillen-grid-div {
@@ -172,8 +193,38 @@ html {
     justify-content: space-evenly;
 }
 
+.medaille-title {
+    display: flex;
+    justify-content: center;
+    color: var(--brand-color);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    /* text-shadow: 0 0 1px hsla(0, 0%, 0%, 0.377); */
+}
+.medaille-text {
+    color: var(--text-dark-color);
+    font-size: 0.9rem;
+    line-height: 1.6;
 
+    text-align: justify;
+    hyphens: auto;
+}
 
+.medaille-logo-div {
+    margin-bottom: 0.4rem;
+    display: flex;
+    justify-content: center;
+
+}
+.medaille-logo {
+    width: 27%;
+    height: auto;
+}
+
+/* .olympic-medal {
+    width: 42%;
+} */
 
 
 
