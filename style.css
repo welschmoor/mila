@@ -7,7 +7,7 @@ bg: hsl(335, 65%, 91%);
 headerbg: rgb(187, 87, 128);
  hsl(335, 42%, 54%);
 
-
+Light Version colors
 
 
 
@@ -17,7 +17,7 @@ headerbg: rgb(187, 87, 128);
     --brand-color: hsl(335, 42%, 44%);
     --bg-color: hsl(335, 65%, 91%);
 
-    --text-color: hsl(335, 42%, 100%);
+    --text-color: hsl(335, 42%, 96%);
 
 
 }
@@ -46,17 +46,21 @@ html {
         Header     Navbar
 //////////////////////////////////////////////////*/
 .header {
-
+    background-color: var(--brand-color);
 }
 
 .headerdiv {
     background-color: var(--brand-color);
-    height: 2.7rem;
+    height: 3.7rem;
     display: flex;
     align-items: center;
 }
 
+.mainnav {
+
+}
 .mainnav-ul {
+    margin-left: 2rem;
     display: flex;
     gap: 2rem;
 
@@ -75,7 +79,7 @@ html {
     color:     var(--text-color);
 
     padding: 0.3rem 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.411);
 }
 .mainnav-a:hover,
@@ -84,6 +88,16 @@ html {
     box-shadow: 0 0 0 3px white;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.logo-div {
+    flex-basis: 3rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+.headerlogo {
+    width: 100%;
+
 }
 
 
@@ -102,22 +116,28 @@ html {
 
 
 .hero-title-text-div {
-    margin-left: 2rem;
+    margin-left: 3rem;
+    margin-right: 1rem;
     transform: translate(0, -1%);
 }
+
+
 .h1heading {
     color: var(--text-color);
-    font-size: 4rem;
+    font-size: 3.2rem;
     font-weight: 800;
     line-height: 1;
     letter-spacing: -2.4px;
     margin-bottom: 2rem;
-    /* text-shadow: -1px -2px 0px hsl(335, 42%, 68%); */
+    text-shadow: -1px -1px 1px hsl(0, 0%, 0%);
 }
 .hero-text {
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: var(--text-color);
+    /* text-shadow: -1px -1px 1px hsla(0, 0%, 0%, 0.521); */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.411);
 }
+
 
 .hero-img-div {
     transform: translate(0%, 10%);
@@ -129,6 +149,7 @@ html {
 
     width: 90%;
     width: 90%;
+    display: bock;
 }
 
 
@@ -154,5 +175,9 @@ html {
         Footer
 //////////////////////////////////////////////////*/
 .footer {
+
+}
+
+footerdiv {
 
 }
