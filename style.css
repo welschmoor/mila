@@ -179,5 +179,75 @@ html {
 }
 
 .footerdiv {
+    padding: 2rem 0;
+    padding-bottom: 0.6rem;
     background-color: var(--brand-color);
+}
+.footernav {
+    margin-left: 3rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+}
+
+.footernav-ul {
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+
+    list-style: none;
+}
+
+.footernav-li {
+
+}
+
+.footernav-a:link,
+.footernav-a:visited {
+    text-decoration: none;
+    font-weight: 700;
+    color:     var(--text-color);
+    cursor: pointer;
+    padding-bottom: 0.2rem;
+    font-size: 0.8rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.411);
+    transition: padding-bottom 0.2s;
+}
+.footernav-a:hover,
+.footernav-a:active {
+    padding-bottom: 0rem;
+    border-bottom: 3px solid var(--text-color);
+
+}
+
+.footer-title {
+    font-size: 1rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.411);
+    color:     var(--text-color);
+    margin-bottom: 1.2rem;
+}
+
+.address {
+    text-decoration: none;
+    font-weight: 700;
+    color:     var(--text-color);
+    font-style: normal;
+
+    font-size: 0.8rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.411);
+}
+
+
+.copyright {
+    color:     var(--text-color);
+    font-size: 0.7rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.411);
+}
+
+.footerlogo-div {
+    width: 3rem;
+    margin-bottom: 2rem;
 }
