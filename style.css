@@ -178,6 +178,6 @@ html {
 
 }
 
-footerdiv {
-
+.footerdiv {
+    background-color: var(--brand-color);
 }
