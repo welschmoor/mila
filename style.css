@@ -103,6 +103,7 @@ html {
 
 .medalafter {
     margin-right: 1rem;
+    position: relative;
 }
 .medalafter::before {
     content: url(img/medaillen.png);
@@ -110,7 +111,7 @@ html {
     position: absolute;
     top:  0;
     left: 0;
-    transform: scale(0.08) translate(280%, -530%);
+    transform: scale(0.08) translate(-110%, -570%);
     z-index: 1;
 }
 
@@ -178,7 +179,7 @@ html {
         Medaillen
 //////////////////////////////////////////////////*/
 .medaillen-maindiv {
-    padding: 3rem 0rem;
+    padding: 1rem 0rem;
     margin-top: 4.2rem;
 
 }
@@ -239,7 +240,8 @@ html {
 //////////////////////////////////////////////////*/
 .fotos-maindiv {
     /* background-color: var(--brand-color); */
-    padding: 2.4rem 2.4rem;
+    padding: 4.4rem 2.4rem;
+    padding-bottom: 2.4rem;
 }
 .fotos-grid {
     display: grid;
@@ -287,11 +289,23 @@ html {
 /*//////////////////////////////////////////////////
         Testimonials
 //////////////////////////////////////////////////*/
+.testimonials-titel {
+    color: var(--text-color);
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -2.4px;
+    margin-bottom: 0rem;
+    margin-top: 2rem;
+    text-shadow: -1px -1px 1px hsl(0, 0%, 0%);  
+    text-align: center;
+}
+
 .testimonials {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.589), rgba(0, 0, 0, 0.589)),url(img/testimonials.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.589), rgba(0, 0, 0, 0.589)),url(img/testimonials1.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    /* height: 100vh; */
     background-attachment: fixed;    
     border-top: 15px solid var(--brand-color);
     border-bottom: 15px solid var(--brand-color);
@@ -303,27 +317,43 @@ html {
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     margin: 0rem 3rem;
-    padding-top: 5rem;
+    padding-top: 4rem;
     column-gap: 3rem;
 }
 
 
-
+blockquote {
+    position: relative;
+}
 blockquote:before {
+    /*content adds text, this is special quote character*/
+    content: "\201C";
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    top: -55px;
+    left: -23px;
+    color: var(--span-color);
+}
+
+
+/* blockquote:before {
     color: #ccc;
     content: open-quote;
     font-size: 4em;
 
- }
+ } */
 
  .blockquote-text-p {
     color: var(--text-color);
     margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
  }
 
  figcaption {
     display: block;
     margin-top: 1rem;
+    margin-bottom: 2rem;
     color: var(--text-color);
     text-align: center;
     color: var(--span-color);
@@ -338,7 +368,8 @@ blockquote:before {
 .testimonials-img {
     width: 50%;
     border-radius: 50%;
-    box-shadow: 0px 0px 0px 15px var(--brand-color);
+    box-shadow: 0px 0px 0px 5px var(--span-color);
+    box-shadow: 0px 0px 10px 10px var(--span-color);
 }
 
 
@@ -424,4 +455,23 @@ blockquote:before {
 .footerlogo-div {
     width: 3rem;
     margin-bottom: 2rem;
+}
+
+
+
+
+
+
+/*//////////////////////////////////////////////////
+        MISC
+//////////////////////////////////////////////////*/
+/* MISC */
+
+.reveal {
+    transition: transform 1.2s, opacity 2.4s;
+}
+.section--hidden {
+    display: hidden;
+    transform: translateY(8rem);
+    opacity: 0;
 }
