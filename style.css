@@ -101,6 +101,9 @@ html {
 
 }
 
+.medalafter {
+    margin-right: 1rem;
+}
 .medalafter::before {
     content: url(img/medaillen.png);
     display: inline-block;
@@ -206,7 +209,7 @@ html {
     color: var(--text-dark-color);
     font-size: 0.9rem;
     line-height: 1.6;
-
+    font-weight: 400;
     text-align: justify;
     hyphens: auto;
 }
@@ -279,6 +282,64 @@ html {
 
 
 
+
+
+/*//////////////////////////////////////////////////
+        Testimonials
+//////////////////////////////////////////////////*/
+.testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.589), rgba(0, 0, 0, 0.589)),url(img/testimonials.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;    
+    border-top: 15px solid var(--brand-color);
+    border-bottom: 15px solid var(--brand-color);
+}
+
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    margin: 0rem 3rem;
+    padding-top: 5rem;
+    column-gap: 3rem;
+}
+
+
+
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+
+ }
+
+ .blockquote-text-p {
+    color: var(--text-color);
+    margin-bottom: 2rem;
+ }
+
+ figcaption {
+    display: block;
+    margin-top: 1rem;
+    color: var(--text-color);
+    text-align: center;
+    color: var(--span-color);
+    font-weight: 700;
+ }
+
+.testimonials-img-div {
+    display: flex;
+    justify-content: center;
+
+}
+.testimonials-img {
+    width: 50%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 15px var(--brand-color);
+}
 
 
 
